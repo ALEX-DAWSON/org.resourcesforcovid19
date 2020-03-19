@@ -11,15 +11,24 @@ h1 {
   text-align: center;
 }
 
+p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 /* Classes */
 
 .title {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 3px solid #832522;
+  border-radius: 1rem;
 }
 
 .logoDiv {
@@ -30,9 +39,50 @@ h1 {
 
 .logo {
   width: 50%;
+  cursor: pointer;
 }
 
 .mainTitle {
   flex-basis: 75%;
-  
+  text-shadow: 0px 0px 10px black;
+}
+
+.wrapper {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  width:90%;
+  height: 100%;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  background-color:#ffffff;
+  border: solid 2px black;
+  border-radius: 1rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  order: 1;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.content {
+  order: 2;
+  margin: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
 }
